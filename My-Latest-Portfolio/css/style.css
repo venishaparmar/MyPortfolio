@@ -47,7 +47,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 7%;
+    padding: 2rem 3%;
     background: transparent;
     display: flex;
     align-items: center;
@@ -541,7 +541,7 @@ span {
 }
 
 .testimonial-box .swiper-pagination-bullet {
-    background: rgba(0, 0, 0, .8);
+    background: #9b9bed;
 }
 
 .testimonial-box .swiper-pagination-bullet-active {
@@ -632,6 +632,12 @@ span {
 
 
 /* BREAKPOINTS */
+@media (max-width: 1500px) {
+    .navbar a:nth-child(1) {
+        color: var(--white-color);
+    }
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -687,6 +693,9 @@ span {
     .navbar a:nth-child(1) {
         color: var(--main-color);
     }
+    .navbar a:nth-child(2) {
+        color: var(--main-color);
+    }
 
     .navbar a.active::before {
         background: var(--main-color);
@@ -715,7 +724,7 @@ span {
 }
 
 @media (max-width: 896px) {
-    .navbar a:nth-child(2) {
+    .navbar a:nth-child(3) {
         color: var(--main-color);
     }
 
@@ -731,12 +740,6 @@ span {
 @media (max-width: 879px) {
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 780px) {
-    .navbar a:nth-child(2) {
-        color: var(--white-color);
     }
 }
 
